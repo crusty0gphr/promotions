@@ -7,15 +7,15 @@ import (
 type (
 	Result struct {
 		ID             string  `json:"id"`
-		Price          float64 `json:"price"`
 		ExpirationDate string  `json:"expiration_date"`
+		Price          float64 `json:"price"`
 	}
 
 	Row struct {
-		ID             int
-		Key            uuid.UUID
-		Price          float64
 		ExpirationDate string
+		ID             int
+		Price          float64
+		Key            uuid.UUID
 	}
 
 	Promotions []Row
